@@ -1,0 +1,311 @@
+  .load-mark {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgb(0, 0, 0);
+      filter:alpha(opacity=20);  
+      background-color: rgba(0, 0, 0, 0.2);
+      line-height: 100%;
+      text-align: center;
+      color: #fff;
+      line-height: 100%;
+      z-index: 9999;
+  }
+  
+  .loading {
+      width: 25px;
+      height: 25px;
+      border-radius: 100%;
+      border: 3px solid #fff;
+      position: absolute;
+      margin: auto;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      border-bottom-color: transparent;
+      animation: rotate 0.75s 0s linear infinite;
+  }
+  
+  .loading2 {
+      height: 100%;
+      line-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .loading2 div {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #fff;
+      margin: 0 2px;
+  }
+  
+  .loading2 div:nth-child(0) {
+      animation: scale 0.75s 0s infinite ease;
+  }
+  
+  .loading2 div:nth-child(1) {
+      animation: scale 0.75s 0.12s infinite ease;
+  }
+  
+  .loading2 div:nth-child(2) {
+      animation: scale 0.75s 0.24s infinite ease;
+  }
+  
+  .loading2 div:nth-child(3) {
+      animation: scale 0.75s 0.36s infinite ease;
+  }
+  
+  .loading2 div:nth-child(4) {
+      animation: scale 0.75s 0.48s infinite ease;
+  }
+  
+  .loading2 div:nth-child(5) {
+      animation: scale 0.75s 0.60s infinite ease;
+  }
+  
+  .loading2 div:nth-child(6) {
+      animation: scale 0.75s 0.72s infinite ease;
+  }
+  
+  @keyframes rotate {
+      0% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+      }
+      50% {
+          -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+      }
+      100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+      }
+  }
+  
+  @keyframes scale {
+      0% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          opacity: 1;
+      }
+      45% {
+          -webkit-transform: scale(0.1);
+          transform: scale(0.1);
+          opacity: 0.7;
+      }
+      80% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          opacity: 1;
+      }
+  }
+  
+  .code {
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .code-part-108 {
+      background: #33495E;
+      padding: 60px
+  }
+  
+  h1 {
+      font-family: 'Actor', sans-serif;
+      color: #FFF;
+      font-size: 16px;
+      letter-spacing: 1px;
+      font-weight: 200;
+      text-align: center;
+  }
+  
+  .csshub-108-loader span {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      margin-left: -10px;
+      top: 50%;
+      margin-top: -8px;
+      animation: 3s infinite linear;
+      -webkit-animation: 3s infinite linear;
+  }
+  
+  .csshub-108-loader span:nth-child(1) {
+      background: #E84C3D;
+      animation: csshub-108-kiri 1.2s infinite linear;
+      -webkit-animation: csshub-108-kiri 1.2s infinite linear;
+  }
+  
+  .csshub-108-loader span:nth-child(2) {
+      background: #F1C40F;
+      z-index: 100;
+  }
+  
+  .csshub-108-loader span:nth-child(3) {
+      background: #2FCC71;
+      animation: csshub-108-kanan 1.2s infinite linear;
+      -webkit-animation: csshub-108-kanan 1.2s infinite linear;
+  }
+  
+  @-webkit-keyframes csshub-108-kanan {
+      0% {
+          -webkit-transform: translateX(20px);
+      }
+      50% {
+          -webkit-transform: translateX(-20px);
+      }
+      100% {
+          -webkit-transform: translateX(20px);
+          z-index: 200;
+      }
+  }
+  
+  @keyframes csshub-108-kanan {
+      0% {
+          transform: translateX(20px);
+      }
+      50% {
+          transform: translateX(-20px);
+      }
+      100% {
+          transform: translateX(20px);
+          z-index: 200;
+      }
+  }
+  
+  @-webkit-keyframes csshub-108-kiri {
+      0% {
+          -webkit-transform: translateX(-20px);
+          z-index: 200;
+      }
+      50% {
+          -webkit-transform: translateX(20px);
+      }
+      100% {
+          -webkit-transform: translateX(-20px);
+      }
+  }
+  
+  @keyframes csshub-108-kiri {
+      0% {
+          transform: translateX(-20px);
+          z-index: 200;
+      }
+      50% {
+          transform: translateX(20px);
+      }
+      100% {
+          transform: translateX(-20px);
+      }
+  }
+  
+  .code-part-102 {
+      background: #ccc;
+      padding: 100px;
+  }
+  
+  .csshub-102-loading {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 50%;
+      margin-top: -25px;
+      left: 50%;
+      margin-left: -25px;
+  }
+  
+  .csshub-102-loading:before {
+      content: '';
+      width: 50px;
+      height: 5px;
+      background: #000;
+      opacity: 0.1;
+      position: absolute;
+      top: 59px;
+      left: 0;
+      border-radius: 50%;
+      animation: csshub-102-shadow .5s linear infinite;
+      -webkit-animation: csshub-102-shadow .5s linear infinite;
+  }
+  
+  .csshub-102-loading:after {
+      content: '';
+      width: 50px;
+      height: 50px;
+      background: #1A6844;
+      animation: csshub-102-animate .5s linear infinite;
+      -webkit-animation: csshub-102-animate .5s linear infinite;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 3px;
+  }
+  
+  @keyframes csshub-102-animate {
+      17% {
+          border-bottom-right-radius: 3px;
+      }
+      25% {
+          transform: translateY(9px) rotate(22.5deg);
+      }
+      50% {
+          transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+          border-bottom-right-radius: 40px;
+      }
+      75% {
+          transform: translateY(9px) rotate(67.5deg);
+      }
+      100% {
+          transform: translateY(0) rotate(90deg);
+      }
+  }
+  
+  @-webkit-keyframes csshub-102-animate {
+      17% {
+          border-bottom-right-radius: 3px;
+      }
+      25% {
+          transform: translateY(9px) rotate(22.5deg);
+      }
+      50% {
+          transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+          border-bottom-right-radius: 40px;
+      }
+      75% {
+          transform: translateY(9px) rotate(67.5deg);
+      }
+      100% {
+          transform: translateY(0) rotate(90deg);
+      }
+  }
+  
+  @keyframes csshub-102-shadow {
+      0%,
+      100% {
+          transform: scale(1, 1);
+      }
+      50% {
+          transform: scale(1.2, 1);
+      }
+  }
+  
+  @-webkit-keyframes csshub-102-shadow {
+      0%,
+      100% {
+          transform: scale(1, 1);
+      }
+      50% {
+          transform: scale(1.2, 1);
+      }
+  }

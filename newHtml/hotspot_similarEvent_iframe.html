@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <title>类似事件河流图</title>
+    <script src="../js/lib/jquery.min.js"></script>
+    <script src="../js/lib/echarts/echarts-all-4.js"></script>
+</head>
+<body>
+
+ <div id="submain" style="min-width: 590px; height: 480px;"></div>
+
+
+ <script>
+     var myChart = echarts.init(document.getElementById('submain'));
+     var option = {
+         tooltip : {
+             trigger: 'item',
+             enterable: true
+         },
+         legend: {
+             data:['财经事件', '政治事件']
+         },
+         xAxis : [
+             {
+                 type : 'time',
+                 boundaryGap: [0.05,0.1]
+             }
+         ],
+         yAxis: {
+             name: '地区：全国',
+             nameTextStyle: {
+                 color: '#000'
+             },
+             axisLabel: {
+                 show: false
+             }
+         },
+         series : [
+             {
+                 "name": "财经事件",
+                 "type": "eventRiver",
+                 "weight": 123,
+                 "data": [
+                     {
+                         "name": "阿里巴巴上市",
+                         "weight": 123,
+                         "evolution": [
+                             {
+                                 "time": "2014-05-01",
+                                 "value": 14,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img":'../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-02",
+                                 "value": 34,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-03",
+                                 "value": 60,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-04",
+                                 "value": 40,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-05",
+                                 "value": 10,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             }
+                         ]
+                     },
+                     {
+                         "name": "阿里巴巴上市2",
+                         "weight": 123,
+                         "evolution": [
+                             {
+                                 "time": "2014-05-02",
+                                 "value": 10,
+                                 "detail": {
+                                     "link": "www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-03",
+                                 "value": 34,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-04",
+                                 "value": 40,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-05",
+                                 "value": 10,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             }
+                         ]
+                     },
+                     {
+                         "name": "三星业绩暴跌",
+                         "weight": 123,
+                         "evolution": [
+                             {
+                                 "time": "2014-05-03",
+                                 "value": 24,
+                                 "detail": {
+                                     "link": "www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-04",
+                                 "value": 34,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-05",
+                                 "value": 50,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-06",
+                                 "value": 30,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-07",
+                                 "value": 20,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             }
+                         ]
+                     }
+                 ]
+             },
+             {
+                 "name": "政治事件",
+                 "type": "eventRiver",
+                 "weight": 123,
+                 "data": [
+                     {
+                         "name": "Apec峰会",
+                         "weight": 123,
+                         "evolution": [
+                             {
+                                 "time": "2014-05-06",
+                                 "value": 14,
+                                 "detail": {
+                                     "link": "www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-07",
+                                 "value": 34,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-08",
+                                 "value": 60,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-09",
+                                 "value": 40,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-10",
+                                 "value": 20,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             }
+                         ]
+                     },
+                     {
+                         "name": "运城官帮透视",
+                         "weight": 123,
+                         "evolution": [
+                             {
+                                 "time": "2014-05-08",
+                                 "value": 4,
+                                 "detail": {
+                                     "link": "www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-09",
+                                 "value": 14,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-10",
+                                 "value": 30,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-11",
+                                 "value": 20,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-12",
+                                 "value": 10,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             }
+                         ]
+                     },
+                     {
+                         "name": "底层公务员收入超过副部长",
+                         "weight": 123,
+                         "evolution": [
+                             {
+                                 "time": "2014-05-11",
+                                 "value": 4,
+                                 "detail": {
+                                     "link": "www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-12",
+                                 "value": 24,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-13",
+                                 "value": 40,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-14",
+                                 "value": 20,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-15",
+                                 "value": 15,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             },
+                             {
+                                 "time": "2014-05-16",
+                                 "value": 10,
+                                 "detail": {
+                                     "link": "http://www.baidu.com",
+                                     "text": "百度指数",
+                                     "img": '../images/favicon.png'
+                                 }
+                             }
+                         ]
+                     }
+                 ]
+             }
+         ]
+     };
+
+     myChart.setOption(option);
+ </script>
+</body>
+</html>

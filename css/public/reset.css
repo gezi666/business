@@ -1,0 +1,36 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font:14px/1.5 '\5FAE\8F6F\96C5\9ED1';}
+body{background:#fff;font-family:"微软雅黑";color:#333}
+h1,h2,h3,h4,h5,h6,button,input,select,textarea{font-size:100%}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+button,input,select,textarea{vertical-align:baseline;*vertical-align:middle}
+address,cite,dfn,em,var,i{font-style:normal}
+code,kbd,pre,samp{font-family:courier new,courier,monospace}
+small{font-size:80%}
+ul,ol{list-style:none}
+a{text-decoration:none;color:#008AFF}
+sub,sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline}
+sup{top:-0.5em}
+sub{bottom:-0.25em}
+fieldset,img{border:0}
+input:focus,textarea:focus{outline:none}
+legend{color:#333}
+textarea{resize:none;overflow:auto;vertical-align:top}
+button{cursor:pointer;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+.cf{*zoom:1}
+.cf:before,.cf:after{display:table;content:"";line-height:0}
+.cf:after{clear:both}
+.clear{clear:both;width:1px;height:0;font-size:1px;visibility:hidden;overflow:hidden}
+.fl{float:left}
+.fr{float:right}
+.tl{text-align:left}
+.tr{text-align:right}
+.tc{text-align:center}
+.vm{vertical-align:middle}
+.pr{position:relative}
+.pa{position:absolute}
+.fn{font-weight:normal!important}
+.fb{font-weight:bold}
+.f12{font-size:12px}
+.f14{font-size:14px}

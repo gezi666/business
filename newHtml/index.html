@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <title>消费维权统计分析</title>
+</head>
+
+<body>
+	<header>
+    <div class="header">
+        <div class="logo"></div>
+        <div class="logo2"></div>
+        <div class="selRegion">
+            <select>
+                <option>全国地区</option>
+                <option>北京</option>
+                <option>上海</option>
+                <option>广州</option>
+                <option>深圳</option>
+            </select>
+        </div>
+        <div class="message"></div>
+        <div class="logOut"></div>
+        <span class="address">corey@mossiolab.com</span>
+    </div>
+</header>
+
+    <div id="mainWrap">
+     	<div class="lSide">
+    <ul style="list-style-type: none">
+        <li class="L0"></li>
+        <li class="L1">
+            <a class="biaoTi" href="index.html">消费维权</a>
+        </li>
+        <li class="L2">
+            <a class="biaoTi">市场监管</a>
+        </li>
+        <li class="L3">
+            <a class="biaoTi">经济户籍</a>
+        </li>
+        <li class="L4">
+            <a class="biaoTi">商标广告</a>
+        </li>
+        <li class="L5">
+            <a class="biaoTi">行政执法</a>
+        </li>
+        <li class="L6">
+            <a class="biaoTi">非公党建</a>
+        </li>
+        <li class="L7">
+            <a class="biaoTi">企业年报</a>
+        </li>
+        <li class="L8">
+            <a class="biaoTi">区域经济</a>
+        </li>
+        <li class="L9">
+            <a class="biaoTi">综合分析</a>
+        </li>
+    </ul>
+</div>
+
+        <div class="mainBody">
+            <div class="chageBar">
+                <ul>
+                    <li><a class="active" href="index.html">消费维权统计分析</a></li>
+                    <li><a href="marComplaintHots.html">市场投诉热点</a></li>
+                    <li><a href="good_server_type.html">商品服务分类监管</a></li>
+                    <li><a href="key_enterprises.html">重点企业监管</a></li>
+                    <li><a href="cus_wripr.html">重点流通领域商品监管</a></li>
+                    <li><a href="analysisGoods.html">涉诉商品分析</a></li>
+                </ul>
+            </div>
+            <div class="contentHot pad10 cf" >
+                <div class="hotL fl">
+                    <div class="tLable">
+                        <h1>消费维权登记热力图</h1>
+                        <div class="selectTime fr">
+                            <button class="time_day active fl">本日</button>
+                            <button class="time_week fl">本周</button>
+                            <button class="time_month fl">本月</button>
+                        </div>
+                    </div>
+                    <div id="echart_hot"></div>
+                    <div class="totleCount">
+                        <div class="count">
+                            <div class="count_lable">登记总量： （件）</div>
+                            <div class="count_shu"> 83232 </div>
+                        </div>
+                        <div class="jinE">
+                            <div class="jinE_lable">挽回金额： （万元）</div>
+                            <div class="jinE_shu"> 13489 </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotR fr">
+                    <div class="dengji">
+                        <div class="tLable">
+                            <h1>登记总量类型</h1>
+                        </div>
+                        <div id="echart_register"></div>
+                    </div>
+                    <div class="tousu">
+                        <div class="tLable">
+                            <h1>投诉热点</h1>
+                        </div>
+                        <div id="echart_complaint"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="supervise pad10 cf" style="margin-top: -13px">
+                <div class="commodity_supervise fl">
+                    <div class="tLable">
+                        <h1>重点商品监管</h1>
+                        <i class="fr">>></i>
+                    </div>
+                    <div id="echart_commodity"></div>
+                </div>
+                <div class="service_supervise fl">
+                    <div class="tLable">
+                        <h1>重点服务监管</h1>
+                        <i class="fr">>></i>
+                    </div>
+                    <div id="echart_service"></div>
+                </div>
+                <div class="enterprise_supervise fr">
+                    <div class="tLable">
+                        <h1>重点监管企业</h1>
+                        <i class="fr">>></i>
+                    </div>
+                    <div id="top5_enterprise">
+                        <ul class="ranking">
+                            <li class="title">
+                                <span class="col fl">排名</span>
+                                <span class="content fl">企业名称</span>
+                                <span class="value fl">投诉量</span>
+                            </li>
+                            <li class="item_one">
+                                <div class="col fl">
+                                    <i class="icon_value">1</i>
+                                </div>
+                                <div class="content fl">
+                                    <span>北京九次方有限责任公司</span>
+                                </div>
+                                <div class="value fl">
+                                    <span class="warn_value">120</span>
+                                </div>
+                            </li>
+                            <li class="item_two">
+                                <div class="col fl">
+                                    <i class="icon_value">2</i>
+                                </div>
+                                <div class="content fl">
+                                    <span>北京趣拿软件科技有限公司</span>
+                                </div>
+                                <div class="value fl">
+                                    <span class="warn_value">96</span>
+                                </div>
+                            </li>
+                            <li class="item_three">
+                                <div class="col fl">
+                                    <i class="icon_value">3</i>
+                                </div>
+                                <div class="content fl">
+                                    <span>甘肃建投装备制造有限公司 </span>
+                                </div>
+                                <div class="value fl">
+                                    <span class="warn_value">64</span>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="col fl">
+                                    <i class="icon_value">4</i>
+                                </div>
+                                <div class="content fl">
+                                    <span>酒钢集团冶金集团有限公司</span>
+                                </div>
+                                <div class="value fl">
+                                    <span class="warn_value">61</span>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="col fl">
+                                    <i class="icon_value">5</i>
+                                </div>
+                                <div class="content fl">
+                                    <span>玉门油田方圆物业管理有限</span>
+                                </div>
+                                <div class="value fl">
+                                    <span class="warn_value">48</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<footer>-->
+    <!--</footer>-->
+</body>
+<script src='../js/lib/jquery.min.js'></script>
+<script src='../js/lib/select2.full.min.js'></script>
+<script src='../js/lib/echarts/echarts.js'></script>
+<script src='../js/lib/echarts/china.js'></script>
+<script src='../js/main.js'></script>
+<script src='../js/index.js'></script>
+
+</html>

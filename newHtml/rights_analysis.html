@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/app.css" />
+    <title>电商问题</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="logo"></div>
+        <div class="logo2"></div>
+        <div class="selRegion">
+            <select>
+                <option>全国地区</option>
+                <option>北京</option>
+                <option>上海</option>
+                <option>广州</option>
+                <option>深圳</option>
+            </select>
+        </div>
+        <div class="message"></div>
+        <div class="logOut"></div>
+        <span class="address">corey@mossiolab.com</span>
+    </div>
+</header>
+
+<div id="mainWrap">
+    <div class="lSide">
+    <ul style="list-style-type: none">
+        <li class="L0"></li>
+        <li class="L1">
+            <a class="biaoTi" href="index.html">消费维权</a>
+        </li>
+        <li class="L2">
+            <a class="biaoTi">市场监管</a>
+        </li>
+        <li class="L3">
+            <a class="biaoTi">经济户籍</a>
+        </li>
+        <li class="L4">
+            <a class="biaoTi">商标广告</a>
+        </li>
+        <li class="L5">
+            <a class="biaoTi">行政执法</a>
+        </li>
+        <li class="L6">
+            <a class="biaoTi">非公党建</a>
+        </li>
+        <li class="L7">
+            <a class="biaoTi">企业年报</a>
+        </li>
+        <li class="L8">
+            <a class="biaoTi">区域经济</a>
+        </li>
+        <li class="L9">
+            <a class="biaoTi">综合分析</a>
+        </li>
+    </ul>
+</div>
+
+    <div class="mainBody">
+        <div class="cus_top">
+            <ul class="y_menu">
+                <li><a href="index.html">消费维权统计分析</a></li>
+                <li class="active"><a href="marComplaintHots.html">市场投诉热点</a></li>
+                <li><a href="good_server_type.html">商品服务分类监管</a></li>
+                <li><a href="key_enterprises.html">重点企业监管</a></li>
+                <li><a href="cus_wripr.html">重点流通领域商品监管</a></li>
+                <li><a href="analysisGoods.html">涉诉商品分析</a></li>
+            </ul>
+        </div>
+        
+        <div class="lr_main">
+            <div class="problem-num">
+                <span class="num" style="padding-left: 15px">电商问题: 售后保障（1234）件</span>
+                <div class="complaintDetails"><a href="rights_analysis_details.html" style="color: #fff">投诉明细</a></div>
+            </div>
+            <div class="mainWarp">
+                <div class="main_max fl w49">
+                    <p class="title">所涉平台投诉排行</p>
+                    <div id="map" style="padding: 15px;">
+                    <table cellspacing="0" class="TABLE"><tbody>
+                        <tr>
+                            <td>序号</td>
+                            <td>电商平台</td>
+                            <td>销售量</td>
+                            <td>问题投诉量</td>
+                            <td>平均投诉率</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>淘宝</td>
+                            <td>548147</td>
+                            <td>7854</td>
+                            <td>10.9%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>京东商城</td>
+                            <td>454124</td>
+                            <td>7854</td>
+                            <td>10.9%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>苏宁易购</td>
+                            <td>454124</td>
+                            <td>7854</td>
+                            <td>10.9%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>1号店</td>
+                            <td>454124</td>
+                            <td>7854</td>
+                            <td>10.9%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>国美在线</td>
+                            <td>454124</td>
+                            <td>7854</td>
+                            <td>10.9%</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>当当网</td>
+                            <td>454124</td>
+                            <td>7854</td>
+                            <td>10.9%</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>聚美优品</td>
+                            <td>454124</td>
+                            <td>7854</td>
+                            <td>10.9%</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>乐峰网</td>
+                            <td>454124</td>
+                            <td>7854</td>
+                            <td>10.9%</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>唯品会</td>
+                            <td>454124</td>
+                            <td>7854</td>
+                            <td>10.9%</td>
+                        </tr>
+                    </tbody></table>
+                    </div>
+                </div>
+                <div class="main_max fr w49">
+                    <p class="title">所涉主体投诉排行
+                    <span class="fr regionSelect"><span class="regionSelectTitle">涉诉主体所在地</span>
+                        <select class="fl select2">
+                            <option>全国</option>
+                            <option>北京市</option>
+                            <option>天津市</option>
+                            <option>河北省</option>
+                        </select>
+                    </span>
+                    </p>
+                    <div id="echart1" style="width: 100%;height: 530px;"></div>
+                </div>
+            </div>
+            <div class="mainWarp">
+                <div class="main_max fl w49">
+                    <p class="title">投诉商品投诉排行</p>
+                    <div id="echart2" style="width: 100%;height: 530px;"></div>
+                </div>
+                <div class="main_max fr w49">
+                    <p class="title">主要投诉问题—手机</p>
+                    <div id="echart3" style="width: 100%;height: 530px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<footer>-->
+<!--</footer>-->
+</body>
+<script type="text/javascript" src='../js/lib/jquery.min.js'></script>
+<script type="text/javascript" src='../js/lib/echarts/echarts.min.js'></script>
+<script type="text/javascript" src='../js/lib/select2.full.min.js'></script>
+<script type="text/javascript" src='../js/lib/jquery.mCustomScrollbar.js'></script>
+<script type="text/javascript" src='../js/main.js'></script>
+<script type="text/javascript" src='../js/cus/rights_analysis.js'></script>
+</html>

@@ -1,0 +1,922 @@
+/**********************login*********************/
+html{height: 100%;width: 100%;}
+.loginWrap{background: url(../images/login.png) center no-repeat;background-size: cover;background-color:#1b4c9e;}
+.loginForm{width:405px;margin: 0 auto;position: absolute;top:50%;left:47%;margin-left:-203px;margin-top:-240px;}
+.loginForm h1{width:460px;height:66px;line-height:66px;font-size:45px;color:#9eecff;font-weight: normal;padding-left:120px;background:url(../images/logo2.png) no-repeat left center;margin-bottom:36px;}
+.loginForm .content{background:#fff;width:460px;margin:0 auto;padding:30px 50px;}
+.loginForm .content p.title{font-size:14px;color:#4d4d4d;line-height:3;}
+.loginForm .content li{margin-bottom: 20px;}
+.loginForm .content input.text{height:40px;line-height:40px;display:block;border: 1px solid #d8d8d8;border-radius: 3px;width:98%;box-sizing:border-box;padding: 0 10px;font-size:16px;color:#555555;}
+.loginForm .content .colorA{font-size:14px;color:#00c5ff;}
+.loginForm .submitB{width:440px;margin:0 auto;background:#f9fafa;border-top:1px solid #eee;padding:30px 60px;}
+.loginForm .submit{font-size:20px;color:#fefefe;display:block;box-sizing:border-box;height:45px;background:#1398ff;line-height:45px;border:none;box-shadow: 0 3px 4px #0e77c9;border-radius:5px;text-align:center;margin-top:20px;}
+
+
+/**********************navigation*********************/
+.pad40{
+    padding: 0 40px;
+}
+.navContainer{
+    width: 1240px;
+    margin: 115px auto;
+}
+.navline{
+    height: 266px;
+    position: relative;
+}
+.navContainer .mid{
+    margin: 40px 0;
+}
+.con{
+    position: absolute;
+    transition:transform .2s;
+    -webkit-transition:transform .2s; /* Safari */
+}
+.con:hover{
+    border-radius: 3px;
+    transform:scale(1.1)
+}
+
+.hovA{top:0;left:0}
+.hovB{top:0;right:0;bottom: 0;left: 0;margin: auto}
+.hovC{top:0;right:0}
+.hovD{top:0;left:0}
+.hovE{top:0;left:514px;}
+.hovF{top:0;right:0}
+.hovG{top:0;left:0}
+.hovH{top:0;right:0;bottom: 0;left: 0;margin: auto}
+.hovI{top:0;right:0}
+
+.con a{
+    border: 2px solid transparent;
+    border-radius: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+}
+.con a:hover{
+    border-color: #03b9ef;
+}
+.con h2{
+    background-color: #fff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom: 1px solid #ccc;
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+}
+.con h2 span{
+    color: #000;
+    display: inline-block;
+    font-size: 16px;
+}
+.con h2 i{
+    display: inline-block;
+    background: url("../images/navIco.png") center no-repeat;
+    width: 31px;
+    height: 31px;
+    margin: 14px 10px 0 20px;
+}
+.con h2 i.ico_economics{
+    background-position: 0 2px;
+}
+.con h2 i.ico_rights{
+    background-position: -50px 2px;
+}
+.con h2 i.ico_party{
+    background-position: -97px 2px;
+}
+.con h2 i.ico_supervise{
+    background-position: 0 -50px;
+}
+.con h2 i.ico_report{
+    background-position: -50px -49px;
+}
+.con h2 i.ico_enforcement{
+    background-position: -97px -50px;
+}
+
+.con h2 i.ico_advertisement{
+    background-position: 0 -98px;
+}
+.con h2 i.ico_household{
+    background-position: -50px -98px;
+}
+.con h2 i.ico_analysis{
+    background-position: -97px -98px;
+}
+.con1{
+    cursor: pointer;
+    width: 343px;
+    overflow: hidden;
+}
+.con2{
+    width: 474px;
+    /*overflow: hidden;*/
+}
+.chartContainer{
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 100%;
+    height: 205px;
+    overflow: hidden;
+}
+#economics{
+    background: #60d3e5 url("../images/nav1.png") center no-repeat;
+}
+#rights{
+    background: #519af9 url("../images/nav2.png") center no-repeat;
+    background-size: contain;
+}
+#party{
+    background: #0186f5 url("../images/nav3.png") center no-repeat;
+}
+#supervise{
+    background: #2b3966 url("../images/nav4.png") center no-repeat;
+}
+#report{
+    background: #03b9ef url("../images/nav5.png") center no-repeat;
+    background-size: contain;
+}
+#enforcement{
+    background: #fff url("../images/nav6.png") center no-repeat;
+}
+#advertisement{
+    background: #02aa7a url("../images/nav7.png") center no-repeat;
+}
+#household{
+    background: #fff url("../images/nav8.png") center no-repeat;
+}
+#analysis{
+    background: #2c3967 url("../images/nav9.png") center no-repeat;
+}
+
+
+/*内容样式*/
+.subContainer{
+    width: 100%;
+}
+
+/*消费维权统计分析*/
+
+/*切换栏样式*/
+.chageBar{
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.chageBar li{
+    display: inline-block;
+    float: left;
+}
+.chageBar li a{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 20px;
+    height: 60px;
+    line-height: 60px;
+    color: #000;
+    cursor: pointer;
+    font-size: 18px;
+}
+.chageBar a:hover{
+    color: #0099ff;
+}
+.chageBar a.active{
+    color: #0099ff;
+    border-bottom: 3px solid #0099ff;
+}
+
+
+/*热点样式*/
+
+.contentHot div{
+    box-sizing: border-box;
+}
+.contentHot .hotL{
+    position: relative;
+    width: 66.5%;
+    /*height: 663px;*/
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.contentHot .hotL .totleCount{
+    position: absolute;
+    top: 65px;
+    left: 15px;
+}
+.contentHot .hotL .totleCount div{
+    display: inline-block;
+    /*box-sizing: border-box;*/
+    width: 160px;
+    height: 70px;
+    text-align: center;
+    overflow: hidden;
+}
+.contentHot .hotL .totleCount .count{
+    border: 2px solid #ff3366;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.contentHot .hotL .totleCount .count_lable{
+    color: #ff3366;
+    font-size: 14px;
+    height: 27px;
+    line-height: 27px;
+
+}
+.contentHot .hotL .totleCount .count_shu{
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    height: 43px;
+    background-color: #ff3366;
+}
+.contentHot .hotL .totleCount .jinE{
+    border: 2px solid #33ccff;
+    border-radius: 5px;
+}
+.contentHot .hotL .totleCount .jinE_lable{
+    color: #0099cc;
+    font-size: 14px;
+    height: 27px;
+    line-height: 27px;
+}
+.contentHot .hotL .totleCount .jinE_shu{
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    height: 43px;
+    background-color: #33ccff;
+}
+.contentHot .hotR{
+    width: 33%;
+    box-sizing: border-box;
+    /*background-color: #fff;*/
+    /*border: 1px solid #ccc;*/
+}
+.dengji{
+    width: 100%;
+    /*height: 347px;*/
+    margin-bottom: 7px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.tousu{
+    width: 100%;
+    /*height: 305px;*/
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.supervise div{
+    box-sizing: border-box;
+    background-color: #fff;
+    /*border: 1px solid #ccc;*/
+    /*height: 477px;*/
+    width: 33%;
+}
+.supervise div[id]{
+    box-sizing: border-box;
+    height: 427px;
+    width: 100%;
+    overflow: hidden;
+}
+.service_supervise{
+    margin-left: .5%;
+}
+div.tLable{
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+div.tLable h1{
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    margin-left: 15px;
+    display: inline-block;
+}
+div.tLable i{
+    display: inline-block;
+    margin-right: 15px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+}
+div.selectTime{
+    display: inline-block;
+    border: 2px solid #333366;
+    border-radius: 15px;
+    margin: 8px 10px 0 0;
+    overflow: hidden;
+}
+div.selectTime button{
+    width: 78px;
+    height: 30px;
+    color: #333366;
+    cursor: pointer;
+    border: 0;
+    border-right: 2px solid #333366;
+    background-color: transparent;
+}
+div.selectTime button:focus{
+    outline: 0;
+}
+div.selectTime button:last-child{
+    border: 0;
+}
+div.selectTime button.active{
+    background-color: #333366;
+    color: #fff;
+}
+.contentHot #echart_hot{
+    box-sizing: border-box;
+    height: 610px;
+    overflow: hidden;
+}
+.contentHot #echart_register{
+    box-sizing: border-box;
+    height: 296px;
+    overflow: hidden;
+}
+.contentHot #echart_complaint{
+    box-sizing: border-box;
+    height: 255px;
+    overflow: hidden;
+}
+
+/*重点监管企业样式*/
+.biaoT{
+    height: 50px;
+    line-height: 50px;
+    padding-bottom: 0 !important;
+}
+.biaoT span{
+    display: inline-block;
+    color: #000;
+    font-size: 20px;
+    padding-left: 15px;
+}
+.complaintDetails{
+    display: inline-block;
+    height: 30px;
+    cursor: pointer;
+    float: right;
+    line-height: 30px;
+    padding: 0 30px;
+    margin: 10px 30px 0 0;
+    background-color: #3c6fc6;
+    color: #fff;
+    border-radius: 5px;
+}
+.complaintDetails a{
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.commodity_supervise,.service_supervise,.enterprise_supervise{
+    border: 1px solid #ccc;
+}
+#top5_enterprise{
+    padding: 8px;
+    padding-top: 0;
+}
+#top5_enterprise li{
+    height: 64px;
+    line-height: 64px;
+}
+#top5_enterprise li div{
+    background-color: transparent;
+}
+#top5_enterprise li.title{
+    height: 40px;
+    background-color: transparent;
+    border: 0;
+}
+#top5_enterprise li.item{
+    background-color: transparent;
+    border: 0;
+}
+#top5_enterprise .value{
+    background-color: transparent;
+}
+#top5_enterprise li.item .value span{
+    background-color: transparent;
+    color: #66ccff;
+}
+#top5_enterprise li.title span{
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: 40px;
+}
+#top5_enterprise span.content{
+    width: 70%;
+    padding: 0 0 0 10px !important;
+}
+#top5_enterprise span.value{
+    width: 20%;
+}
+
+#top5_enterprise .item_one{
+    border: solid 1px #f54654;
+    background-color: #fffbfb;
+    margin-top: 0;
+}
+#top5_enterprise .item_one .warn_value{
+    color: #f54654;
+}
+#top5_enterprise .item_two .warn_value{
+    color: #fda234;
+}
+#top5_enterprise .item_three .warn_value{
+    color: #26b8d2;
+}
+
+.y_list .ranking{
+    padding: 0 10px;
+}
+.ranking li{
+    height: 90px;
+    margin-top: 10px;
+    background-color: #f9fdfe;
+    border: solid 1px #45b0f2;
+}
+.ranking .col{
+    width: 10%;
+    height: 100%;
+    padding-left: 15px;
+    position: relative;
+}
+.ranking .title .col{
+    padding-left: 5px;
+}
+.ranking .title .value{
+    padding-left: 14px;
+}
+.ranking .content{
+    width: 70%;
+    height: 100%;
+}
+.ranking .value{
+    width: 20%;
+    height: 100%;
+    float: right;
+    background-color: #45b0f2;
+}
+.ranking .value span{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    color: #fff;
+}
+.value .warn{
+    margin-top: 20px;
+}
+.value .warn_value{
+    font-weight: 800;
+    font-size: 20px;
+}
+.item .value .warn_value{
+    font-weight: 800;
+    font-size: 18px;
+}
+.ranking .content span{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 64px;
+    padding: 0 10px;
+}
+.ranking .content .detail{
+    width: 100%;
+    height: 38px;
+}
+.ranking .content .detail1,.ranking .content .detail2{
+    float: left;
+    height: 100%;
+}
+.ranking .content .detail1{
+    padding-left: 10px;
+}
+.ranking .content .detail2{
+    width: 70%;
+    line-height: 18px;
+}
+.item_one .icon_value{
+    background-image: url("../images/one.png");
+}
+.item_two .icon_value{
+    background-image: url("../images/two.png");
+}
+.item_three .icon_value{
+    background-image: url("../images/three.png");
+}
+.col .icon_value{
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    position:absolute;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    top: 50%;
+    left: 50%;
+    margin-left: -14px;
+    margin-top: -14px;
+}
+.item .icon_value{
+    color: #fff !important;
+    background-color: #45b0f2 !important;
+    border-radius: 12px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-left: -12px;
+    margin-top: -12px;
+}
+
+/*消费维权统计分析--重点商品监管1 样式*/
+/*.strDiagram{*/
+/*padding-top: 0 !important;*/
+/*}*/
+.complaintsGoods,#echart_commodities{
+    box-sizing: border-box;
+    height: 610px;
+    width: 100%;
+    overflow: hidden;
+}
+.complaintsGoods .TABLE tr td,.TABLE tr th{
+    white-space: normal;
+    padding-left: 10px
+}
+
+.statistical{
+    position: relative;
+    width: 59%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.somplaintSubject{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 40%;
+}
+.complaintCase,#echart_treatmentStatus{
+    box-sizing: border-box;
+    height: 325px;
+    width: 100%;
+    overflow: hidden;
+}
+#echart_complaintCase1,#echart_complaintCase2{
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+
+}
+.strDiagram_L{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 59%;
+}
+.strDiagram_R{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 40%;
+}
+
+/*家用电器类商品投诉详情 样式*/
+.detailContainer{
+    width: 100%;
+    background-color: #fff;
+}
+.tSearch{
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    height: 70px;
+    width: 100%;
+}
+.eleInp{
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    display: inline-block;
+    width: 320px;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 10px;
+}
+.eleBut{
+    box-sizing: border-box;
+    background-color: #3f71c3;
+    border: 0;
+    display: inline-block;
+    width: 95px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.TABLE th{
+    padding-left: 20px;
+    text-align: left;
+}
+.pagtion{
+    margin: 25px 0;
+}
+.eleDetails{
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*市场投诉热点 样式*/
+.hotsContainer{
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.highSelect{
+    margin: 10px;
+}
+.highSelect select{
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+}
+.select2{
+    margin-right: 10px;
+}
+.echart_body{
+    width: 100%;
+    height: 808px;
+}
+
+/*时间轴样式*/
+.ui-slider-horizontal .ui-slider-range{
+    background-color: #859de6 !important;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+    border-radius: 50% !important;
+}
+.ui-corner-all{
+    border-radius: .4em !important;
+}
+/*时间轴样式*/
+
+/*舆情热点 样式*/
+.evens{
+    width: 49.5%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.evUpCon{
+    box-sizing: border-box;
+    height: 320px;
+    padding: 18px;
+    overflow: hidden;
+}
+.evDownCon{
+    box-sizing: border-box;
+    height: 427px;
+    padding: 18px;
+    overflow: hidden;
+}
+.evDownCon li{
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    height: 70px;
+}
+.evDownCon li p{
+    margin-top: 18px;
+}
+.evDownCon label.source{
+    display: inline-block;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+.evDownCon span.date,.evDownCon span.content{
+    display: inline-block;
+    color: #888;
+    cursor: pointer;
+    font-size: 14px;
+}
+.evDownCon i.sType{
+    border-radius: 12px;
+    display: inline-block;
+    width: 47px;
+    height: 24px;
+    line-height: 24px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+.evDownCon i.negative{
+    background-color: #fc355f;
+}
+.evDownCon i.neutral{
+    background-color: #fa6822;
+}
+.evDownCon i.positive{
+    background-color: #20baec;
+}
+.evDownCon .pagtion{
+    margin-top: 20px !important;
+}
+.evens_sel{
+    height: 30px;
+    width: 120px;
+}
+.evUpCon p{
+    margin-bottom: 20px;
+}
+.evUpCon span{
+    color: #888;
+    font-size: 14px;
+}
+label.ev_lable{
+    display: inline-block;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*舆情热点-类似事件 样式*/
+.simEvens{
+    width: 100%;
+    background-color: #fff;
+}
+.distribution{
+    box-sizing: border-box;
+    height: 480px;
+    width: 50%;
+    overflow: hidden;
+}
+
+/*市场投诉热点-投诉问题 样式*/
+.comL{
+    background-color: #fff;
+    width: 40%;
+}
+.comR{
+    background-color: #fff;
+    width: 59%;
+}
+.cptConUp{
+    box-sizing: border-box;
+    height: 428px;
+    width: 100%;
+    overflow: hidden;
+}
+.cptConDown{
+    box-sizing: border-box;
+    height: 360px;
+    width: 100%;
+    overflow: hidden;
+}
+.sel_region{
+    height: 30px;
+    width: 150px;
+}
+.cptConUp .ranking li{
+    border: 0;
+    height: 65px;
+}
+.cptConUp .ranking li span.content{
+    padding-left: 10px;
+}
+.cptConUp .ranking li.title{
+    background-color: transparent;
+    height: 20px;
+}
+.cptConUp .ranking li.title span{
+    box-sizing: border-box;
+}
+.cptConUp .ranking li div{
+    height: 65px;
+    line-height: 65px;
+}
+.cptConUp .ranking .content{
+    width: 35%;
+    height: 100%;
+}
+.cptConUp .ranking .brand{
+    width: 35%;
+    height: 100%;
+}
+.cptConUp .ranking .item_one{
+    background-color: #fffbfb;
+    border: 1px solid #fa9ea5;
+}
+.cptConUp .ranking .item_two{
+    background-color: #fffcf9;
+    border: 1px solid #fec785;
+}
+.cptConUp .ranking .item_three{
+    background-color: #f9fdfe;
+    border: 1px solid #92dbe8;
+}
+.cptConUp .ranking .item{
+    background-color: #fff;
+}
+.cptConUp .ranking .col{
+    box-sizing: border-box;
+    width: 10%;
+}
+.cptConUp .ranking .content{
+    width: 35%;
+}
+.cptConUp .ranking .brand{
+    width: 35%;
+}
+.cptConUp .ranking .value{
+    width: 20%;
+    background-color: transparent;
+}
+.cptConUp .ranking li.title .value{
+    padding-left: 0;
+    text-align: center;
+}
+
+/*涉诉商品分析图谱页面样式*/
+.keyContainer{
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.keyContainer h1{
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    font-size: 18px;
+    padding-left: 15px;
+}
+#echart_associationMap{
+    height: 652px;
+    width: 100%;
+}
+
+/*投诉商品样式*/
+.relGoods{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 49.5%;
+}
+.sel_type{
+    width: 136px;
+    height: 30px;
+}
+.sel_commodity{
+    width: 120px;
+    height: 30px;
+}
+.cptConUp2{
+    box-sizing: border-box;
+    height: 408px;
+    width: 100%;
+    overflow: hidden;
+}
+.cptConDown2{
+    box-sizing: border-box;
+    height: 538px;
+    width: 100%;
+    overflow: hidden;
+}
+.cptConDown2 .TABLE tr{
+    height: 45px;
+    line-height: 45px;
+}
+.cptConDown2 .TABLE th,
+.cptConDown2 .TABLE td{
+    padding-left: 0;
+}
+.cptConDown2 .TABLE tr th:first-child{
+    padding-left: 6px;
+    padding-right: 0;
+}
+.cptConDown2 .TABLE tr td:first-child{
+    padding-left: 15px;
+    padding-right: 0;
+}
+
+
+/*投诉商品明细页面样式*/
+#complaintGoodsDetails .TABLE th,
+#complaintGoodsDetails .TABLE td{
+    padding-left: 0;
+}
+#complaintGoodsDetails .TABLE tr td:first-child{
+    padding-left: 20px;
+    padding-right: 0;
+}

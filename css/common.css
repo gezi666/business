@@ -1,0 +1,339 @@
+@import "public/select2.css";
+
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font:14px/1.5 '\5FAE\8F6F\96C5\9ED1';}
+body{background:#fff;font-family:"微软雅黑";color:#333}
+h1,h2,h3,h4,h5,h6,button,input,select,textarea{font-size:100%}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+button,input,select,textarea{vertical-align:baseline;*vertical-align:middle}
+address,cite,dfn,em,var,i{font-style:normal}
+code,kbd,pre,samp{font-family:courier new,courier,monospace}
+small{font-size:80%}
+ul,ol{list-style:none}
+a{text-decoration:none;color:#008AFF}
+sub,sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline}
+sup{top:-0.5em}
+sub{bottom:-0.25em}
+fieldset,img{border:0}
+input:focus,textarea:focus{outline:none}
+legend{color:#333}
+textarea{resize:none;overflow:auto;vertical-align:top}
+button{cursor:pointer;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+.cf{*zoom:1}
+.cf:before,.cf:after{display:table;content:"";line-height:0}
+.cf:after{clear:both}
+.clear{clear:both;width:1px;height:0;font-size:1px;visibility:hidden;overflow:hidden}
+.fl{float:left}
+.fr{float:right}
+.tl{text-align:left}
+.tr{text-align:right}
+.tc{text-align:center}
+.vm{vertical-align:middle}
+.pr{position:relative}
+.pa{position:absolute}
+.fn{font-weight:normal!important}
+.fb{font-weight:bold}
+.f12{font-size:12px}
+.f14{font-size:14px}
+
+
+/*IE9以下浏览器兼容性问题提示样式 star */
+/* font */
+@font-face {font-family: "iconfont";
+	src: url('../fonts/iconfont.eot?t=1478592931062'); /* IE9*/
+	src: url('../fonts/iconfont.eot?t=1478592931062#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../fonts/iconfont.woff?t=1478592931062') format('woff'), /* chrome, firefox */
+	url('../fonts/iconfont.ttf?t=1478592931062') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+	url('../fonts/iconfont.svg?t=1478592931062#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.ieTips-iconfont {font-family:"iconfont" !important;font-style:normal;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;/* 抗锯齿 */
+	-webkit-text-stroke-width: 0.2px;/* 描边厚度 */}
+
+.ieTips-icon{float:left;font-size: 30px;color:#333;}
+.ieTips-icon-ie:before { content: "\ebda"; }
+.ieTips-icon-huohu:before { content: "\ebe0"; }
+.ieTips-icon-guge:before { content: "\e83a"; }
+
+.ieTips-icon-lists a{display: inline-block;}
+.ieTips-icon-lists a:hover .ieTips-icon{color:#666666;}
+.ieTips-icon-lists li{float: left;text-align: center;list-style: none !important;}
+
+
+.ieTips{position:fixed;top:0;left:0;width: 100%; height: 50px; line-height: 50px; background: #fff7d9;z-index: 6666}
+.ieTips span{font-size:12px;}
+.ieTips-icon-lists span{margin:0 20px 0 5px;}
+.prompt-txt,.prompt-btn{margin:0 20px;}
+.iet-btn{display:inline-block;height:30px;line-height: 30px;border:1px solid #ccc;padding:0 10px;margin-left:10px;cursor:pointer;background:#e3e2dc;}
+.iet-btn:hover{background:#ecebe6;}
+/*IE9以下浏览器兼容性问题提示样式 end */
+
+
+html,body{width: 100%;min-width: 1280px;background-color: #333366}
+
+#mainWrap{
+	width: 100%;
+	overflow: hidden;
+}
+.lSide{
+	width: 90px;
+	float: left;
+	min-height: 600px;
+	position: absolute;
+	left:0;
+	top:70px;
+	background-color: #333366;
+}
+.mainBody{
+	margin-left:90px;
+	padding-bottom: 50px;
+	box-sizing: border-box;
+	min-height: 880px;
+	background-color: #f4f4f4;
+	overflow: hidden;
+}
+.mainBody2{
+	box-sizing: border-box;
+	background: #f4f4f4 url("../images/navigation_bg.png") center no-repeat;
+	background-size: cover;
+	min-height: 520px;
+	overflow: hidden;
+}
+
+.pad10{
+	padding: 10px !important;
+}
+.padL10{
+	padding-left: 10px !important;
+}
+.padL20{
+	padding-left: 20px !important;
+}
+.pad15{
+	padding: 15px !important;
+}
+
+/*调用百度地图API去掉地图左下角的百度logo*/
+.BMap_cpyCtrl
+{
+	display:none;
+}
+.anchorBL{
+	display:none;
+}
+
+/*分页样式*/
+.pagtion .current.prev,
+.pagtion .current.next{
+	color:#999;
+	background-color: transparent;
+}
+.pagtion a{
+	display: inline-block;
+	font-size: 13px;
+	color: #91a0ad;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	margin:0 5px;
+	border-radius: 2px;
+}
+.pagtion span{
+	display: inline-block;
+	font-size: 13px;
+	color: #91a0ad;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 2px;
+	margin:0 5px;
+}
+.pagtion a:hover{
+	background: #0085f5;
+	color:#fff;
+}
+.pagtion .current{
+	background: #0085f5;
+	color:#fff;
+}
+
+/*头部样式*/
+.header{
+	position: relative;
+	height: 70px;
+	width: 100%;
+	background-color: #333;
+}
+.logo{
+	position: absolute;
+	left: 120px;
+	top: 15px;
+	width: 37px;
+	height: 39px;
+	background: transparent url("../images/logo.png") center no-repeat;
+}
+.logo2{
+	position: absolute;
+	left: 175px;
+	top: 18px;
+	width: 219px;
+	height: 36px;
+	background: transparent url("../images/gongshang.png") center no-repeat;
+}
+/*.header select{*/
+	/*position: absolute !important;*/
+	/*width: 103px !important;*/
+	/*height: 26px !important;*/
+	/*padding-left: 10px !important;*/
+	/*margin-left: 420px !important;*/
+	/*margin-top: 23px !important;*/
+	/*color: #66ccff !important;*/
+	/*font-size: 14px !important;*/
+	/*border: 1px solid #66ccff !important;*/
+	/*border-radius: 5px !important;*/
+	/*background-color: transparent !important;*/
+/*}*/
+/*.header select:focus{*/
+	/*outline: 0;*/
+/*}*/
+.header .selRegion{
+	position: absolute;
+	margin-left: 420px;
+	margin-top: 20px;
+}
+.header .select2{
+	width: 103px !important;
+	color: #66ccff !important;
+	font-size: 14px !important;
+}
+.header .message{
+	position: absolute;
+	right: 42px;
+	top: 26px;
+	width: 21px;
+	height: 21px;
+	cursor: pointer;
+	background: transparent url("../images/message.png") center no-repeat;
+}
+.header .logOut{
+	position: absolute;
+	right: 80px;
+	top: 26px;
+	width: 21px;
+	height: 21px;
+	cursor: pointer;
+	background: transparent url("../images/logOut.png") center no-repeat;
+}
+.header .address{
+	display: inline-block;
+	position: absolute;
+	right: 115px;
+	top: 26px;
+	color: #fff;
+	font-size: 14px;
+}
+/*左侧栏样式*/
+.lSide{
+	z-index: 6666;
+}
+.lSide li{
+	height: 60px;
+	width: 90px;
+	background: #333366 url("../images/leftBar.png") center no-repeat;
+	border-bottom: 1px solid #152453;
+	transition: width .5s;
+	-webkit-transition: width .5s;
+	overflow: hidden;
+}
+.lSide li:hover{
+	background-color: #003366;
+	width: 190px;
+}
+.lSide .L0{
+	background-position: 30px 20px;
+}
+.lSide .L0:hover{
+	background-color: #333366;
+	width: 90px;
+}
+.lSide .L1{
+	background-position: 29px -32px;
+}
+.lSide .L1:hover{
+	background-position: -47px -32px;
+}
+.lSide .L2{
+	background-position: 28px -80px;
+}
+.lSide .L2:hover{
+	background-position: -46px -80px;
+}
+.lSide .L3{
+	background-position: 26px -143px;
+}
+.lSide .L3:hover{
+	background-position: -48px -143px;
+}
+.lSide .L4{
+	background-position: 25px -195px;
+}
+.lSide .L4:hover{
+	background-position: -50px -195px;
+}
+.lSide .L5{
+	background-position: 25px -250px;
+}
+.lSide .L5:hover{
+	background-position: -50px -250px;
+}
+.lSide .L6{
+	background-position: 25px -310px;
+}
+.lSide .L6:hover{
+	background-position: -49px -310px;
+}
+.lSide .L7{
+	background-position: 25px -370px;
+}
+.lSide .L7:hover{
+	background-position: -49px -370px;
+}
+.lSide .L8{
+	background-position: 19px -430px;
+}
+.lSide .L8:hover{
+	background-position: -51px -430px;
+}
+.lSide .L9{
+	background-position: 23px -485px;
+}
+.lSide .L9:hover{
+	background-position: -50px -485px;
+}
+.lSide li .biaoTi{
+	display: inline-block;
+	margin-left: 90px;
+	width: 100px;
+	height: 60px;
+	line-height: 60px;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	background-color: #003366;
+	overflow: hidden;
+}
+
+/*表格样式*/
+.TABLE { font-size: 14px; border-collapse:collapse; width: 100%;  }
+.TABLE tr { border-bottom:1px solid #dcdcdc; border-left:1px solid #dcdcdc; border-right:1px solid #dcdcdc;  height: 50px;line-height: 50px;  }
+.TABLE tr:hover { background-color: #cee0fe; color: #0099ec; cursor: pointer; }
+.TABLE tr:nth-child(odd) { background-color: #f7f7f7; }
+.TABLE tr td { padding:0 10px; }
+.TABLE tr:first-child { height: 40px; line-height: 40px; border-bottom:1px solid #dcdcdc; background-color: #157acf; color: #fff; }
+.TABLE tr td:first-child { width: 50px; position: relative; }
+.TABLE tr td,.TABLE tr th{white-space: nowrap;text-overflow: ellipsis;padding-left: 10px}

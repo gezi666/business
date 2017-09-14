@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="../css/app.css" />
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Bd55XdcjoedHhlwaLoGGeIGKxA3EneDV"></script>
+    <title>消费维权--统计分析</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="logo"></div>
+        <div class="logo2"></div>
+        <div class="selRegion">
+            <select>
+                <option>全国地区</option>
+                <option>北京</option>
+                <option>上海</option>
+                <option>广州</option>
+                <option>深圳</option>
+            </select>
+        </div>
+        <div class="message"></div>
+        <div class="logOut"></div>
+        <span class="address">corey@mossiolab.com</span>
+    </div>
+</header>
+
+<div id="mainWrap">
+    <div class="lSide">
+    <ul style="list-style-type: none">
+        <li class="L0"></li>
+        <li class="L1">
+            <a class="biaoTi" href="index.html">消费维权</a>
+        </li>
+        <li class="L2">
+            <a class="biaoTi">市场监管</a>
+        </li>
+        <li class="L3">
+            <a class="biaoTi">经济户籍</a>
+        </li>
+        <li class="L4">
+            <a class="biaoTi">商标广告</a>
+        </li>
+        <li class="L5">
+            <a class="biaoTi">行政执法</a>
+        </li>
+        <li class="L6">
+            <a class="biaoTi">非公党建</a>
+        </li>
+        <li class="L7">
+            <a class="biaoTi">企业年报</a>
+        </li>
+        <li class="L8">
+            <a class="biaoTi">区域经济</a>
+        </li>
+        <li class="L9">
+            <a class="biaoTi">综合分析</a>
+        </li>
+    </ul>
+</div>
+
+    <div class="mainBody">
+        <div class="cus_top">
+            <ul class="y_menu">
+                <li><a href="index.html">消费维权统计分析</a></li>
+                <li><a href="marComplaintHots.html">市场投诉热点</a></li>
+                <li><a href="./good_server_type.html">商品服务分类监管</a></li>
+                <li><a href="./key_enterprises.html">重点企业监管</a></li>
+                <li class="active"><a href="./cus_wripr.html">重点流通领域商品监管</a></li>
+                <li><a href="analysisGoods.html">涉诉商品分析</a></li>
+            </ul>
+        </div>
+        <div class="lr_main">
+            <div class="main_min fl">
+                <p class="title">流通领域市场主体投诉排行</p>
+                <div class="y_select">
+                    <div class="search fl">
+                        <input placeholder="企业名称" />
+                        <span class="searchOk" style="height: 31px"></span>
+                    </div>
+                    <select class="fl select1">
+                        <option>网店</option>
+                        <option>实体</option>
+                    </select>
+                    <select class="fl select2">
+                        <option>全国</option>
+                        <option>北京市</option>
+                        <option>天津市</option>
+                        <option>河北省</option>
+                    </select>
+                </div>
+                <div class="y_list_content">
+                    <ul class="ranking">
+                        <li class="item_one">
+                            <div class="col fl">
+                                <span class="icon_value">1</span>
+                            </div>
+                            <div class="content fl">
+                                <span>瑞德摩尔</span>
+                                <div class="detail">
+                                    <div class="detail1">地址：</div>
+                                    <div class="detail2">甘肃省兰州市城关区东港<br/>东路1681号</div>
+                                </div>
+                                <span>电话：13238764787</span>
+                            </div>
+                            <div class="value fl">
+                                <span class="warn">预警值</span>
+                                <span class="warn_value">99</span>
+                            </div>
+                        </li>
+                        <li class="item_two">
+                            <div class="col fl">
+                                <span class="icon_value">2</span>
+                            </div>
+                            <div class="content fl">
+                                <span>兰新电器市场</span>
+                                <div class="detail">
+                                    <div class="detail1">地址：</div>
+                                    <div class="detail2">甘肃省兰州市城关区东港<br/>东路1681号</div>
+                                </div>
+                                <span>电话：13238764787</span>
+                            </div>
+                            <div class="value fl">
+                                <span class="warn">预警值</span>
+                                <span class="warn_value">98</span>
+                            </div>
+                        </li>
+                        <li class="item_three">
+                            <div class="col fl">
+                                <span class="icon_value">3</span>
+                            </div>
+                            <div class="content fl">
+                                <span>苏宁易购-兰州南关店  </span>
+                                <div class="detail">
+                                    <div class="detail1">地址：</div>
+                                    <div class="detail2">甘肃省兰州市城关区东港<br/>东路1681号</div>
+                                </div>
+                                <span>电话：13238764787</span>
+                            </div>
+                            <div class="value fl">
+                                <span class="warn">预警值</span>
+                                <span class="warn_value">96</span>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="col fl">
+                                <span class="icon_value">4</span>
+                            </div>
+                            <div class="content fl">
+                                <span>国美电器-双城门店</span>
+                                <div class="detail">
+                                    <div class="detail1">地址：</div>
+                                    <div class="detail2">甘肃省兰州市城关区东港<br/>东路1681号</div>
+                                </div>
+                                <span>电话：13238764787</span>
+                            </div>
+                            <div class="value fl">
+                                <span class="warn">预警值</span>
+                                <span class="warn_value">94</span>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="col fl">
+                                <span class="icon_value">5</span>
+                            </div>
+                            <div class="content fl">
+                                <span>苏宁易购-白安店</span>
+                                <div class="detail">
+                                    <div class="detail1">地址：</div>
+                                    <div class="detail2">甘肃省兰州市城关区东港<br/>东路1681号</div>
+                                </div>
+                                <span>电话：13238764787</span>
+                            </div>
+                            <div class="value fl">
+                                <span class="warn">预警值</span>
+                                <span class="warn_value">84</span>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="col fl">
+                                <span class="icon_value">6</span>
+                            </div>
+                            <div class="content fl">
+                                <span>瑞德摩尔</span>
+                                <div class="detail">
+                                    <div class="detail1">地址：</div>
+                                    <div class="detail2">甘肃省兰州市城关区东港<br/>东路1681号</div>
+                                </div>
+                                <span>电话：13238764787</span>
+                            </div>
+                            <div class="value fl">
+                                <span class="warn">预警值</span>
+                                <span class="warn_value">80</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main_max fr">
+                <p class="title">流通领域市场主体位置分布</p>
+                <div class="box">
+                    <div class="search fl">
+                        <input value="" id="mapInput" placeholder="请输入地名"/>
+                        <span class="searchOk" id="searchMap"></span>
+                    </div>
+                    <div class="map" id="mapId"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src='../js/lib/jquery.min.js'></script>
+<script type="text/javascript" src='../js/lib/echarts/echarts.min.js'></script>
+<script type="text/javascript" src='../js/lib/select2.full.min.js'></script>
+<script type="text/javascript" src='../js/lib/jquery.mCustomScrollbar.js'></script>
+<script type="text/javascript" src='../js/main.js'></script>
+<script type="text/javascript" src='../js/cus/cus_wripr.js'></script>
+</html>

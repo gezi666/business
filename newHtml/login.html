@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>工商大数据平台</title>
+    <link rel="stylesheet" type="text/css" href="../css/public/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+
+<body class="loginWrap">
+	<div class="loginForm">
+		<h1>工商大数据平台</h1>
+		<div class="content">
+			<form action="" onsubmit="return false">
+				<ul>
+					<li>
+						<p class="title">用户名</p>
+						<input type="text" class="text userName" placeholder="admin">
+					</li>
+					<li>
+						<p class="title">密码</p>
+						<input type="password"  class="text password" placeholder="******">
+					</li>
+                    <li>
+                    	<a href="javascript:;" class="colorA fl">忘记密码</a>
+                        <!-- <a href="" class="colorA fr">注册</a> -->
+                    </li>
+				</ul>
+			</form>
+		</div>
+        <p class="submitB">
+			<a href="javascript:;" class="submit">登录</a>
+		</p>
+	</div>
+</body>
+<script src='../js/lib/jquery.min.js'></script>
+<script>
+	$(function(){
+		
+		$(".submitB .submit").click(function(){
+			var  userName=$.trim($(".userName").val());
+			var  pwd=$.trim($(".password").val());
+			if (userName=="admin" && pwd=="admin") {
+				window.location.href="navigation.html"
+			}else{
+				alert("请正确填写用户名和密码")
+			}
+		})
+	})
+</script>
+</html>

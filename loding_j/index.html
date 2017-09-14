@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>加载效果</title>
+<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" type="text/css" href="css/loding.css">
+ <link rel="stylesheet" type="text/css" href="css/animation.css">
+</head>
+<body>
+	<!-- DOM结构 -->
+	<!-- <div class="lodingWarp">
+		<div class="lodingBox">
+			<div class="imgBox">
+				<img class="lodingImg" src="images/loding.gif">
+			</div>
+			<div class="tipsBox">正在加载，请稍候...</div> 
+		</div>
+	</div>
+	<div class="shade"></div> -->
+	 <div class="buttonBox">
+		<div class="button" onclick="loding_1();">默认样式,及扩展动画</div>
+		<div class="button" onclick="loding_2();">自定义图片</div>
+		<div class="button" onclick="loding_3();">显示图标和自定义提示语</div>
+		<div class="button" onclick="loding_4();">在指定区域显示</div>
+		<div class="button" onclick="loding_5();">点击屏幕手动停止并执行事件</div>
+		<div class="button" onclick="loding_6();">加载超时并执行事件</div>
+	</div>
+
+	<div id="lodingWarp"></div> 
+</body>
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="js/loding.js"></script>
+<script type="text/javascript">
+	
+	function loding_1(){
+		var config = {
+		 	//animation:'ball-pulse'
+			// animation:'ball-grid-pulse'
+			// animation:'ball-clip-rotate'
+			// animation:'ball-clip-rotate-pulse'
+			// animation:'square-spin'
+			// animation:'ball-clip-rotate-multiple'
+			// animation:'ball-pulse-rise'
+			// animation:'line-scale'
+			// animation:'ball-scale-multiple'
+			// animation:'ball-pulse-sync'
+			// animation:'ball-beat'
+			// animation:'ball-spin-fade-loader'
+			// animation:'line-spin-fade-loader'
+			// animation:'triangle-skew-spin'
+			// animation:'pacman'
+			// animation:'semi-circle-spin'
+			// animation:'ball-triangle-path'
+		}
+		var obj = new Loding();
+	 	obj.start();
+	 	setTimeout(function(){
+	 		obj.stop();
+	 	},3000)	
+	}
+	function loding_2(){
+		var obj = new Loding({image:'images/loding.gif'});
+	 	obj.start();
+	 	setTimeout(function(){
+	 		obj.stop();
+	 	},3000)	
+	}
+	function loding_3(){
+		var obj = new Loding({image:'images/loding.gif',tips:'正在加载，请稍候...'});
+	 	obj.start();
+	 	setTimeout(function(){
+	 		obj.stop();
+	 	},3000)	
+	}
+	function loding_4(){
+		var obj = new Loding({image:'images/loding.gif',tips:'正在加载，请稍候...',dom:'#lodingWarp',});
+	 	obj.start();
+	 	setTimeout(function(){
+	 		obj.stop();
+	 	},3000)	
+	}
+	function loding_5(){
+		var callback = function(){alert('加载中断')};
+		var obj = new Loding({image:'images/loding.gif',tips:'正在加载，请稍候...',stop:{open:true,callback:callback}});
+	 	obj.start();
+	}
+	function loding_6(){
+		var callback = function(){alert('加载超时')};
+		var obj = new Loding({image:'images/loding.gif',tips:'正在加载，请稍候...',overtime:{time:10,callback:callback}});
+	 	obj.start();
+	}
+</script>
+</html>

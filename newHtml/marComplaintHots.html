@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/public/jquery-ui.min.css">
+    <title>市场投诉热点</title>
+</head>
+
+<body>
+<header>
+    <div class="header">
+        <div class="logo"></div>
+        <div class="logo2"></div>
+        <div class="selRegion">
+            <select>
+                <option>全国地区</option>
+                <option>北京</option>
+                <option>上海</option>
+                <option>广州</option>
+                <option>深圳</option>
+            </select>
+        </div>
+        <div class="message"></div>
+        <div class="logOut"></div>
+        <span class="address">corey@mossiolab.com</span>
+    </div>
+</header>
+
+<div id="mainWrap">
+    <div class="lSide">
+    <ul style="list-style-type: none">
+        <li class="L0"></li>
+        <li class="L1">
+            <a class="biaoTi" href="index.html">消费维权</a>
+        </li>
+        <li class="L2">
+            <a class="biaoTi">市场监管</a>
+        </li>
+        <li class="L3">
+            <a class="biaoTi">经济户籍</a>
+        </li>
+        <li class="L4">
+            <a class="biaoTi">商标广告</a>
+        </li>
+        <li class="L5">
+            <a class="biaoTi">行政执法</a>
+        </li>
+        <li class="L6">
+            <a class="biaoTi">非公党建</a>
+        </li>
+        <li class="L7">
+            <a class="biaoTi">企业年报</a>
+        </li>
+        <li class="L8">
+            <a class="biaoTi">区域经济</a>
+        </li>
+        <li class="L9">
+            <a class="biaoTi">综合分析</a>
+        </li>
+    </ul>
+</div>
+
+    <div class="mainBody">
+        <div class="chageBar">
+            <ul>
+                <li><a href="index.html">消费维权统计分析</a></li>
+                <li><a class="active" href="marComplaintHots.html">市场投诉热点</a></li>
+                <li><a href="good_server_type.html">商品服务分类监管</a></li>
+                <li><a href="key_enterprises.html">重点企业监管</a></li>
+                <li><a href="cus_wripr.html">重点流通领域商品监管</a></li>
+                <li><a href="analysisGoods.html">涉诉商品分析</a></li>
+            </ul>
+        </div>
+        <div class="pad10 cf" >
+            <div class="hotsContainer">
+                <div class="tLable">
+                    <h1>市场投诉热点</h1>
+                    <div class="highSelect fr">
+                        <select class="fl select1">
+                            <option>选择行业</option>
+                            <option>电商</option>
+                            <option>餐饮</option>
+                            <option>酒店</option>
+                        </select>
+                        <select class="fl select2">
+                            <option>选择地区</option>
+                            <option>北京市</option>
+                            <option>天津市</option>
+                            <option>河北省</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="echart_body">
+                    <div id="container" style="width: 100%; height: 600px;"></div>
+                    <div id="date-slider" style="width: 90%; border-radius:20px;margin: 20px auto"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src='../js/lib/jquery.min.js'></script>
+<script src='../js/lib/jquery-ui.min.js'></script>
+<script src="../js/lib/d3.js"></script>
+<script src="../js/lib/bubble-cloud.js"></script>
+<script src="../js/lib/sliderUI.js"></script>
+<script src='../js/lib/echarts/echarts.js'></script>
+<script src='../js/lib/select2.full.min.js'></script>
+<script src='../js/main.js'></script>
+<script src='../js/marComplaintHots.js'></script>
+
+</html>

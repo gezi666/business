@@ -1,0 +1,38 @@
+html,body{width: 100%;min-width: 1280px;}
+.header{
+	height: 90px;
+	background-color: #f90;
+	line-height: 90px;
+	box-sizing: border-box;
+	padding:0 20px;
+}
+.logo{
+	display: inline-block;
+	font-size: 12px;
+	line-height: 22px;
+}
+#mainWrap{
+	width: 100%;
+	overflow: hidden;
+	
+}
+.lSide{
+	padding-bottom:100000px;
+	margin-bottom:-100000px;
+	float: left;
+	min-height: 600px;
+}
+.mainBody{
+	width: 100%;
+	float: left;
+	padding-bottom:100000px;
+	margin-bottom:-100000px;
+	background-color: #ccc;
+	margin-right: -220px;
+	box-sizing: border-box;
+	padding-right: 220px;
+	
+	
+}
+
+

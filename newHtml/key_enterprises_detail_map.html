@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <title>重点企业监管--明细--地图</title>
+    <style>
+        html,body{padding: 0;margin: 0;}
+        .keyMap{
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            position: absolute;
+        }
+        .keyMap div{
+            display: block;
+            width: 25%;
+            text-align: center;
+            float: left;
+            color: #3f71c3;
+        }
+        .keyMap div span{
+            color: #000;
+        }
+        .key1{
+            top: 40%;
+        }
+        .key2{
+            bottom: 2%;
+        }
+    </style>
+</head>
+<body>
+  <div class="keyMap key1">
+      <div>① <span>兰州市</span></div>
+      <div>② <span>嘉峪关市</span></div>
+      <div>③ <span>金昌市</span></div>
+      <div>④ <span>白银市</span></div>
+  </div>
+  <div class="keyMap key2">
+      <div>⑤ <span>天水市</span></div>
+      <div>⑥ <span>酒泉市</span></div>
+      <div>⑦ <span>张掖市</span></div>
+      <div>⑧ <span>武威市</span></div>
+  </div>
+  <div id="mapId" style="width: 100%;height: 290px;"></div>
+</body>
+<script type="text/javascript" src='../js/lib/echarts/echarts-2-min.js'></script>
+<script>
+    var myChart = echarts.init(document.getElementById('mapId'));
+    var itemStyle = {
+        normal:{
+            color:'#079ce9',
+            areaStyle:{
+                color:'green'
+            },
+            label:{
+            show:true,
+            formatter:'{b}',
+            textStyle: {fontSize: 16,fontWeight : 'bold',color:'#fff'}
+        }},
+        emphasis:{label:{show:true}}
+    };
+    var option = {
+//        dataRange: {
+//            show:false,
+//            orient: 'horizontal',
+//            x : 'center',
+//            y: 'center',
+//            min: 2000,
+//            max: 16000,
+//            splitNumber: 0,            // 分割段数，默认为5
+//            text:['16,000B','2,000B'],
+//            calculable : true,
+//            itemWidth:40,
+//            color: ['orangered','yellow','lightskyblue']
+//        },
+        series : [
+            {
+                name: '兰州市',
+                type: 'map',
+                mapType: '甘肃|兰州市',
+                mapLocation: {x:'5%', y:'10%',width:'25%',height:'25%'},
+                itemStyle: itemStyle,
+                data:[
+                    {name : '兰州市', value : 156}
+                ]
+            },
+            {
+                name: '嘉峪关市',
+                type: 'map',
+                mapType: '甘肃|嘉峪关市',
+                mapLocation: {x:'30%', y:'10%',width:'25%',height:'25%'},
+                itemStyle: itemStyle,
+                data:[
+                    {name : '嘉峪关市', value : 40}
+                ]
+            },
+            {
+                name: '金昌市',
+                type: 'map',
+                mapType: '甘肃|金昌市',
+                mapLocation: {x:'55%', y:'10%',width:'25%',height:'25%'},
+                itemStyle: itemStyle,
+                data:[
+                    {name : '金昌市', value : 35}
+                ]
+            },
+            {
+                name: '白银市',
+                type: 'map',
+                mapType: '甘肃|白银市',
+                mapLocation: {x:'80%', y:'10%',width:'25%',height:'25%'},
+                itemStyle: itemStyle,
+                data:[
+                    {name : '白银市', value : 34}
+                ]
+            },
+            {
+                name: '天水市',
+                type: 'map',
+                mapType: '甘肃|天水市',
+                mapLocation: {x:'5%', y:'60%',width:'25%',height:'25%'},
+                itemStyle: itemStyle,
+                data:[
+                    {name : '天水市', value : 26}
+                ]
+            },
+            {
+                name: '酒泉市',
+                type: 'map',
+                mapType: '甘肃|酒泉市',
+                mapLocation: {x:'33%', y:'60%',width:'25%',height:'25%'},
+                itemStyle: itemStyle,
+                data:[
+                    {name : '酒泉市', value : 24}
+                ]
+            },
+            {
+                name: '张掖市',
+                type: 'map',
+                mapType: '甘肃|张掖市',
+                mapLocation: {x:'55%', y:'62%',width:'25%',height:'25%'},
+                itemStyle: itemStyle,
+                data:[
+                    {name : '张掖市', value : 23}
+                ]
+            },
+            {
+                name: '武威市',
+                type: 'map',
+                mapType: '甘肃|武威市',
+                mapLocation: {x:'80%', y:'60%',width:'25%',height:'25%'},
+                itemStyle: itemStyle,
+                data:[
+                    {name : '武威市', value : 20}
+                ]
+            }
+        ]
+    };
+    myChart.setOption(option);
+</script>
+</html>
