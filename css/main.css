@@ -29,8 +29,8 @@ html{height: 100%;width: 100%;}
 }
 .con{
     position: absolute;
-    transition:transform .2s;
-    -webkit-transition:transform .2s; /* Safari */
+    transition:all .5s;
+    -webkit-transition:all .5s; /* Safari */
 }
 .con:hover{
     border-radius: 3px;
@@ -54,7 +54,7 @@ html{height: 100%;width: 100%;}
     box-sizing: border-box;
     width: 100%;
 }
-.con a:hover{
+.con:hover a{
     border-color: #03b9ef;
 }
 .con h2{
